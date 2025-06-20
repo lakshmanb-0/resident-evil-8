@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Willkommen auf der Startseite",
+    "subtitle": "Dein Abenteuer beginnt hier!",
+    "description": "Erkunde die Geheimnisse von Resident Evil 8 und entdecke verborgene Geheimnisse.",
+    "cta": "Erkunde starten",
+    "funFactLabel": "Wissenswertes:",
+    "funFact": "Resident Evil 8 ist auch als Village bekannt!",
+    "randomNumberLabel": "Zufallszahl"
+  }
+} 
