@@ -1,5 +1,12 @@
 import { useTranslations } from "next-intl";
 
+/**
+ * Renders the localized home page with a title, subtitle, description, call-to-action button, a fun fact, and a randomly generated number.
+ *
+ * All displayed text is dynamically translated based on the current locale.
+ *
+ * @returns The JSX markup for the localized home page.
+ */
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
