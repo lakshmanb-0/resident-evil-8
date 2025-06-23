@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { ThemeProvider } from "../components/theme-provider";
-import { ThemeToggle } from "../components/theme-toggle";
-import { LanguageSwitcher } from "../components/language-switcher";
+import { LenisProvider } from "../components/lenis-provider";
 
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Navbar } from "../components/navbar/navbar";
+import { Footer } from "../components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,15 +33,14 @@ export default async function RootLayout({
         style={{ fontFamily: "var(--primary-font)" }}
       >
         <NextIntlClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <LanguageSwitcher locale={locale} />
-            <ThemeToggle />
-            {children}
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <LenisProvider>
+              <main className="relative text-accent-foreground">
+                <Navbar locale={locale} />
+                {children}
+                <Footer />
+              </main>
+            </LenisProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
