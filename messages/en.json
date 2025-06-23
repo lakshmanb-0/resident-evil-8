@@ -1,11 +1,43 @@
 {
-    "HomePage":{
-        "title": "Welcome to the Homepage",
-        "subtitle": "Your adventure starts here!",
-        "description": "Explore the mysteries of Resident Evil 8 and uncover hidden secrets.",
-        "cta": "Start Exploring",
-        "funFactLabel": "Fun Fact:",
-        "funFact": "Resident Evil 8 is also known as Village!",
-        "randomNumberLabel": "Random Number"
+    "Navigation": {
+        "home": {
+            "label": "Home",
+            "url": ""
+        },
+        "trailer": {
+            "label": "Trailer",
+            "url": "trailer"
+        },
+        "character": {
+            "label": "Character",
+            "url": "character"
+        },
+        "guides": {
+            "label": "Guides",
+            "url": "guides"
+        }
+    },
+    "HomePage": {
+        "socialMedias": {
+            "youtube": {
+                "label": "YouTube",
+                "url": "https://youtube.com"
+            },
+            "twitter": {
+                "label": "Twitter", 
+                "url": "https://twitter.com"
+            },
+            "instagram": {
+                "label": "Instagram",
+                "url": "https://instagram.com"
+            },
+            "facebook": {
+                "label": "Facebook",
+                "url": "https://facebook.com"
+            }
+        },
+        "copiesSold":"Over 4 million copies shipped worldwide",
+        "availableNow": "Available Now",
+        "rating":"18"
     }
 }
